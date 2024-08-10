@@ -1,0 +1,94 @@
+{
+    "name": "inputAction",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "14bbb4b2-de1f-4c8c-8dac-aeaeea3c65de",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "f892a310-1bfe-4963-b867-dcec8ade7465",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotation",
+                    "type": "Value",
+                    "id": "369d8035-0170-45ed-8a21-25b993fd5ff9",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "SelectL",
+                    "type": "Button",
+                    "id": "8e35a0a9-f896-4e86-9c29-ef48fc19b174",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "SelectR",
+                    "type": "Button",
+                    "id": "da45870c-e4f1-4419-a033-7ac210999970",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "881277b4-7d26-44b9-b188-5f55618c6a8f",
+                    "path": "<HID::Thrustmaster T.16000M>{leftHand}/stick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b4ab8c4b-d6d4-4c2f-9398-18512eab603a",
+                    "path": "<HID::Thrustmaster T.16000M>{rightHand}/stick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8fd16ff0-25dd-46a3-a60f-91a69294ca50",
+                    "path": "<HID::Thrustmaster T.16000M>{leftHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelectL",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "327d449f-004f-4dd3-a1fd-b58b4b1ee814",
+                    "path": "<HID::Thrustmaster T.16000M>{rightHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelectR",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
