@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -744,6 +744,8 @@ MonoBehaviour:
   _RotationAction: {fileID: -956726117586143841, guid: 40ea5a0635fbce44fa85a938e3166fe8, type: 3}
   _MoveSpeed: 2
   _RotationSpeed: 0.01
+  _MoveSpeedText: {fileID: 1518768699}
+  _RotationSpeedText: {fileID: 987335391}
 --- !u!1 &987335389
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,7 +816,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 11111111111111111111
+  m_Text: 0
 --- !u!222 &987335392
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1188,7 +1190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 11111111111111111111
+  m_Text: 0
 --- !u!222 &1518768700
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1209,7 +1211,7 @@ GameObject:
   - component: {fileID: 1679885591}
   - component: {fileID: 1679885590}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Values
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

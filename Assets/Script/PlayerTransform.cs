@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Mime;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerTransform : MonoBehaviour
 {
@@ -10,10 +12,15 @@ public class PlayerTransform : MonoBehaviour
     [SerializeField] private InputActionReference _RotationAction;
     [SerializeField] private float _MoveSpeed ;
     [SerializeField] private float _RotationSpeed ;
+    [SerializeField] private Text _MoveSpeedText;
+    [SerializeField] private Text _RotationSpeedText;
+
     private float deltaYaw = 0.0f;
     private Vector3 _moveDirection = Vector3.zero;
     private Camera _MainCamera;
 
+    
+    
     void Start()
     {
         _MainCamera = Camera.main;
@@ -24,6 +31,20 @@ public class PlayerTransform : MonoBehaviour
         OffAction();
     }
 
+    private void Update()
+    {
+        RoteUpdate();
+        PosUpdate();
+        // PCdebag用コード
+        TextUpdata();
+    }
+
+    private void TextUpdata()
+    {
+        _MoveSpeedText.text = _MoveSpeed.ToString();
+        _RotationSpeedText.text = _RotationSpeed.ToString();
+    }
+    
     // 左スティックの入力による移動処理
     private void OnMove(InputAction.CallbackContext context)
     {
@@ -90,13 +111,7 @@ public class PlayerTransform : MonoBehaviour
     {
         transform.position += _moveDirection * _MoveSpeed * Time.deltaTime;
     }
-
-    private void Update()
-    {
-        RoteUpdate();
-        PosUpdate();
-    }
-
+    
     public void OnAction()
     {
         _MoveAction.action.Enable();
